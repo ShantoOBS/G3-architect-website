@@ -9,6 +9,7 @@
         "wdth" 100;
 }
 
+
 /* share style  */
 
 .display-flex {
@@ -38,6 +39,11 @@
 
 }
 
+.section-title{
+      font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
 /* header style  */
 
 
@@ -132,39 +138,66 @@ main > section{
     margin-bottom: 25px;
 }
 
-.Quick-list {
-    font-size: 2.8rem;
-    font-weight: 600;
-}
-
-.of-Our {
-    font-size: 2.8rem;
-    font-weight: bold;
-}
 
 .Features {
-    font-size: 2.8rem;
     color: #FF900E;
     font-weight: bold;
 
 }
 
+/*  for some facts style */
+.some-fact-container{
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.fact-item{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+
+   
+}
+
+.fact-in{
+     padding: 45px 35px;
+     text-align: center;
+}
+
+.fact-num{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0px;
+  
+}
+
+.fac-dis{
+     font-size: 20px;
+     margin: 0px;
+
+}
+
 /* responsive media quary */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:718px) {
 
     .navbar,
     .nav-links,
-    .feature-container {
+    .feature-container, .some-fact-container {
         flex-direction: column;
     }
+    .some-fact-container{
+        gap:20px;
+    }
 
+     .fact-item{
+        margin: 20px auto;
+     }
     .navbar,
     .nav-links {
         text-align: center;
     }
 
-    .feature-data {
+   .feature-data {
+        margin: 20px auto;
         padding: 20px;
     }
 
@@ -172,5 +205,26 @@ main > section{
 
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
+    }
+}
+
+/*  responsive for tab  */
+
+@media screen and (min-width:719px) and (max-width:1048px){
+    
+     .feature-container {
+        flex-direction: column;
+    }
+    
+     .some-fact-container{
+        gap:20px;
+        
+     }
+     .fact-item{
+        margin: 20px auto;
+     }
+     .feature-data {
+        margin: 20px auto;
+        padding: 20px;
     }
 }
